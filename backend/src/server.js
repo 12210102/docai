@@ -39,7 +39,7 @@ app.use((_req, res) => res.status(404).json({ error: 'Route not found' }));
 // ── Error handler ──────────────────────────────────
 app.use(errorHandler);
 
-app.get("/" , requestAnima)
+
 app.listen(PORT, () => {
   console.log(`\n🚀 DocAI Server running on http://localhost:${PORT}`);
   console.log(`📄 API: http://localhost:${PORT}/api/document-analyze`);
